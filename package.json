@@ -1,0 +1,23 @@
+{
+  "name": "alexa-skill-yas",
+  "version": "1.0.0",
+  "description": "Alexa skill for a motivaltional tool to compelete life goals using the Amazon Skills Kit SDK",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmahajan1609/yas"
+  },
+  "scripts": {},
+  "keywords": [
+    "alexa",
+    "boilerplate",
+    "voice skill"
+  ],
+  "author": "Adam Gruber",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.3.0",
+    "ask-sdk-model": "1.9.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,287 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "yas",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateGoal",
+                    "slots": [
+                        {
+                            "name": "GoalName",
+                            "type": "Goal"
+                        }
+                    ],
+                    "samples": [
+                        "make goal {GoalName}",
+                        "create goal {GoalName}",
+                        "add goal {GoalName}"
+                    ]
+                },
+                {
+                    "name": "CompleteGoal",
+                    "slots": [
+                        {
+                            "name": "GoalName",
+                            "type": "Goal"
+                        }
+                    ],
+                    "samples": [
+                        "complete goal {GoalName}",
+                        "finish goal {GoalName}"
+                    ]
+                },
+                {
+                    "name": "AboutGoal",
+                    "slots": [
+                        {
+                            "name": "GoalName",
+                            "type": "Goal"
+                        }
+                    ],
+                    "samples": [
+                        "about goal {GoalName}",
+                        "about our goal {GoalName}",
+                        "about my goal {GoalName}",
+                        "about the goal",
+                        "about goal"
+                    ]
+                },
+                {
+                    "name": "CreateStep",
+                    "slots": [
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "add step {StepName}",
+                        "enter step {StepName}",
+                        "create step {StepName}",
+                        "make step {StepName}"
+                    ]
+                },
+                {
+                    "name": "CompleteStep",
+                    "slots": [
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "mark step {StepName} done",
+                        "finish step {StepName}",
+                        "complete step {StepName}"
+                    ]
+                },
+                {
+                    "name": "AboutStep",
+                    "slots": [
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "about step {StepName}"
+                    ]
+                },
+                {
+                    "name": "CreateTask",
+                    "slots": [
+                        {
+                            "name": "TaskName",
+                            "type": "Task"
+                        },
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "add task {TaskName} to step {StepName}",
+                        "enter task {TaskName} for step {StepName}",
+                        "make task {TaskName} for step {StepName}",
+                        "create task {TaskName} for step {StepName}"
+                    ]
+                },
+                {
+                    "name": "CompleteTask",
+                    "slots": [
+                        {
+                            "name": "TaskName",
+                            "type": "Task"
+                        },
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "finish task {TaskName} for step {StepName}",
+                        "complete task {TaskName} for step {StepName}"
+                    ]
+                },
+                {
+                    "name": "AboutTask",
+                    "slots": [
+                        {
+                            "name": "TaskName",
+                            "type": "Task"
+                        },
+                        {
+                            "name": "StepName",
+                            "type": "Step"
+                        }
+                    ],
+                    "samples": [
+                        "about task {TaskName} for step {StepName}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Step",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "presenting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "implementing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "planning"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Task",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "word word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "feel awesome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "create presentation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "create visual representation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "integrate individual code"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "code tasks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "divide technical tasks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "user stories"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scope the project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meet the team"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Goal",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "word word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "word"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
