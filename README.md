@@ -1,5 +1,6 @@
 # Synopsis
-Yas! is a nodejs based alexa skills kit for a motivational tool to accomplish our life goals. Yas Queen, go out and get it! 
+Yas! is a nodejs based alexa skills kit for a motivational tool to accomplish our life goals. Presented to you by the Chien Shiung WU team!
+Yas Queen, go out and get it! 
 
 # Using Yas
 To wake up Alexa say:
